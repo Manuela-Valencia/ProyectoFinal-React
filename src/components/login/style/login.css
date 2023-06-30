@@ -1,0 +1,28 @@
+.login__title {
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.login__test {
+    background-color: var(--test-fondo);
+    padding: 0.8em;
+    border-radius: 4px;
+}
+
+.login__test-titulo {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1rem;
+}
+
+.login__test-value {
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.2rem;
+    margin-bottom: 0.4em;
+}
+
+.login__test-value > span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}

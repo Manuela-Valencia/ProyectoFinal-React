@@ -1,0 +1,125 @@
+.productId__subtitulo {
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.productId__titulo {
+    color: var(--gray-200);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0.5em 0 1.05em 0.6em;
+}
+.productId__data {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.productId__footer--list {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.productId__contenedor--price {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.productId__label {
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 0.9rem;
+}
+
+.productId__price {
+    margin-left: 1em;
+    font-weight: bold;
+    color: var(--gray-200);
+    font-size: 1.15rem;
+}
+
+.productId__quantity--contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productId__btn {
+    width: 32px;
+    border: 1px solid var(--gray);
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fi-rs-minuss, .fi-rs-plus {
+    margin-top: 0.2em;
+}
+
+.productId__quantity--text {
+    display: inline-block;
+}
+
+.productId__quantity {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+}
+
+.add-to-card-button {
+    background: var(--color-red);
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.add-to-card-button::before {
+    width: 160%;
+    content: '';
+    height: 200%;
+    background-color: var(--color-red);
+    position: absolute;
+    top: -200%;
+    left: -27%;
+    border-radius: 50%;
+    z-index: -1;
+    transition: top 0.5s ease-in-out;
+}
+.add-to-card-button:hover::before {
+    top: -20px;
+}
+
+/* Description */
+
+.productId__descripcion {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .productId__contenedor {
+        width: 50%;
+        padding: 1.2rem;
+    }
+    .productId__data {
+        flex-direction: column;
+    }
+    .productId__titulo {
+        margin-left: 0;
+    }
+}

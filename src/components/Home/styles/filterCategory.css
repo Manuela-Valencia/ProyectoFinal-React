@@ -1,0 +1,116 @@
+.filterCategory__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    height: 35px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.filterCategory__header>i {
+    font-size: 1.3rem;
+}
+
+.filterCategory__ul {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.filterCategory__ul>.filterCategory__list {
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.filterCategory__list:hover {
+    color: var(--color-red);
+}
+
+
+.filterCategory__form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.filterCategory__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray-200);
+}
+
+.filterCategory__label>input {
+    border: 1px solid var(--gray);
+    width: 80%;
+    height: 2rem;
+    padding: 0 0.9rem;
+}
+
+.filterCategory__btn {
+    background-color: var(--color-red);
+    color: #fff;
+    align-self: flex-end;
+    padding: 0.7em 1.5em;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.filterCategory__btn::before {
+    content: '';
+    width: 110%;
+    height: 200%;
+    position: absolute;
+    top: -200%;
+    border-radius: 50%;
+    right: -5%;
+    z-index: -1;
+    background-color: red;
+    transition: top 0.5s ease-in-out;
+}
+
+.filterCategory__btn:hover::before {
+    top: -50%;
+}
+
+.filterCategory__filtros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterCategory__filtros-X {
+    font-size: 0.8rem;
+    cursor: pointer;
+    animation: colorTransition 3s infinite alternate;
+}
+
+@media (min-width: 1100px) {
+
+    .filterCategory__ul {
+        gap: 1.3em;
+        margin: 1.5em 0 2em;
+    }
+
+    .filterCategory__form {
+        margin: 1.5em 0 2em;
+    }
+}
+
+
+@keyframes colorTransition {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: var(--color-red);
+    }
+
+    100% {
+        color: black;
+    }
+}

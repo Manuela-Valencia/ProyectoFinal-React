@@ -1,0 +1,66 @@
+.user__contenedor {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--fondo-login);
+}
+
+.user {
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user__logo {
+    font-size: 5rem;
+    color: var(--blue-200);
+}
+
+.user__name {
+    color: var(--gray-200);
+    margin-bottom: 1em;
+}
+
+.user__btn {
+    padding: 0.6rem 1rem;
+    width: 120px;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: whitesmoke;
+    background-color: var(--gray-200);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.user__btn::before {
+    content: '';
+    width: 200%;
+    position: absolute;
+    background-color: black;
+    height: 200%;
+    border-radius: 200%;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.5s ease-in-out;
+}
+
+.user__btn:hover::before {
+    top: -5px;
+}
+
+.volverHome {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+}
